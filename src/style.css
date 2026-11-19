@@ -99,13 +99,18 @@ h1,h2,h3,p{margin:0}
 .android-label{display:inline-flex;gap:8px;align-items:center;font-size:12px;background:#17194f7d;border:1px solid #ffffff45;border-radius:99px;padding:4px 9px}
 .android-label .status-dot{background:#c1caff;box-shadow:none}
 .android-panel p{max-width:none;color:#e8e9ff;margin-top:7px}
+.android-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;width:min(100%,320px);margin-top:23px}
+.android-actions .button{padding-inline:10px}
 .button-white{background:#fff;color:#25265d}.button-outline{color:#fff;border-color:#ffffff72}.button-outline:hover{background:#ffffff20}
 .site-footer{margin-top:36px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
-.footer-main{min-height:75px;display:flex;justify-content:space-between;align-items:center;gap:12px}
-.footer-credit{text-align:center;border-top:1px solid var(--line);padding:12px 0 17px;font-size:12px}
+.footer-main{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:12px;padding:18px 0}
+.footer-tagline{text-align:center}
+.footer-credit{text-align:center;border-top:1px solid var(--line);padding:14px 0 19px;font-size:12px}
+.footer-heart{color:#d42c55}
 .footer-credit strong{color:var(--ink)}
 .site-footer .brand{font-size:19px;color:var(--ink)}
-.back-top{white-space:nowrap}
+.back-top{display:inline-flex;align-items:center;justify-self:end;gap:6px;min-height:36px;white-space:nowrap}
+.back-top .icon{transform:rotate(180deg)}
 @media(max-width:950px){.section{margin-top:70px}}
 @media(max-width:800px){
   .wrap{width:calc(100% - 36px)}
@@ -129,6 +134,9 @@ h1,h2,h3,p{margin:0}
   .brand{font-size:20px}.site-header .brand img{width:35px;height:35px;border-radius:10px}
   .feature-grid{grid-template-columns:1fr}
   .starter{grid-template-columns:1fr;gap:8px}.starter-art{width:130px;grid-row:1;justify-self:start}
-  .footer-tagline{display:none}
+  .site-footer{margin-top:24px}
+  .footer-main{grid-template-columns:minmax(0,1fr) auto;gap:7px 12px;padding:13px 0}
+  .footer-tagline{grid-column:1/-1;grid-row:2}
+  .back-top{grid-column:2;grid-row:1}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
