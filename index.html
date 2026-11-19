@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f8f8fc">
+  <meta name="theme-color" content="#121212">
+  <meta name="color-scheme" content="dark">
   <meta name="description" content="ری‌دنس؛ تجربهٔ یادگیری زبان با موسیقی، متن همگام، ترجمهٔ تعاملی و مرور واژه‌ها در اندروید.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="ری‌دنس — زبان رو با ریتم یاد بگیر">
@@ -13,15 +14,15 @@
   <link rel="stylesheet" href="/src/style.css">
   <!-- Keep the footer layout with its markup so an older cached stylesheet can't break it. -->
   <style>
-    .reedance-footer { display: block; margin-top: 36px; border-top: 1px solid var(--line, #e6e6ef); color: var(--muted, #55596c); font-size: 13px; }
+    .reedance-footer { display: block; margin-top: 36px; border-top: 1px solid var(--line, #393939); color: var(--muted, #b3b3b3); font-size: 13px; }
     .reedance-footer .footer-main { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 12px; padding: 18px 0; }
-    .reedance-footer .brand { justify-self: start; font-size: 19px; color: var(--ink, #131421); }
+    .reedance-footer .brand { justify-self: start; font-size: 19px; color: var(--ink, #f5f5f5); }
     .reedance-footer .footer-tagline { margin: 0; text-align: center; }
     .reedance-footer .footer-top-link { display: inline-flex; align-items: center; justify-self: end; gap: 6px; min-height: 36px; white-space: nowrap; }
-    .reedance-footer .footer-top-link:hover { color: var(--blue, #002afc); }
-    .reedance-footer .footer-credit { margin: 0; padding: 14px 0 19px; border-top: 1px solid var(--line, #e6e6ef); font-size: 12px; text-align: center; }
-    .reedance-footer .footer-credit strong { color: var(--ink, #131421); }
-    .reedance-footer .footer-heart { color: #d42c55; }
+    .reedance-footer .footer-top-link:hover { color: var(--accent, #9bc4ff); }
+    .reedance-footer .footer-credit { margin: 0; padding: 14px 0 19px; border-top: 1px solid var(--line, #393939); font-size: 12px; text-align: center; }
+    .reedance-footer .footer-credit strong { color: var(--ink, #f5f5f5); }
+    .reedance-footer .footer-heart { color: #ffb4ab; }
     @media (max-width: 480px) {
       .reedance-footer { margin-top: 24px; }
       .reedance-footer .footer-main { grid-template-columns: minmax(0, 1fr) auto; gap: 7px 12px; padding: 13px 0; }
@@ -40,7 +41,7 @@
     <nav id="site-nav" aria-label="ناوبری اصلی">
       <a href="#experience">تجربهٔ ری‌دنس</a><a href="#languages">زبان‌ها</a><a href="#faq">سوالات متداول</a>
     </nav>
-    <a class="button button-dark header-cta" href="https://cafebazaar.ir/app/com.hydro.reedance">دانلود از بازار <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#arrow-up-left"/></svg></a>
+    <a class="button button-secondary header-cta" href="https://cafebazaar.ir/app/com.hydro.reedance">دانلود از بازار <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#arrow-up-left"/></svg></a>
   </header>
 
   <main id="main">
@@ -51,7 +52,7 @@
         <p>با آهنگ پیش برو، معنی هر خط رو کشف کن و واژه‌های تازه رو به خاطر بسپار. <br class="desktop-break">ری‌دنس گوش دادن رو به یاد گرفتن تبدیل می‌کنه.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#experience">کشف امکانات <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#arrow-down"/></svg></a>
-          <a class="button button-light" href="https://cafebazaar.ir/app/com.hydro.reedance">دانلود از بازار <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#arrow-up-left"/></svg></a>
+          <a class="button button-secondary" href="https://cafebazaar.ir/app/com.hydro.reedance">دانلود از بازار <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#arrow-up-left"/></svg></a>
         </div>
       </div>
     </section>
@@ -71,28 +72,28 @@
       </div>
       <div class="feature-grid">
         <article class="feature" data-category="listen">
-          <div class="tile tile-listen">
+          <div class="tile">
             <div class="tile-ui lyric-sample" dir="ltr" lang="en"><span>Music makes it easier.</span><strong>Sing it one more time.</strong><span>Let the words stay.</span></div>
           </div>
           <div class="feature-label"><span><svg class="icon" aria-hidden="true"><use href="/media/icons.svg#audio-lines"/></svg> پخش و متن</span><b>۰۱</b></div>
           <h3>متن همگام با آهنگ</h3><p>متن و ترجمه با پخش جلو می‌رن تا راحت‌تر هر خط رو دنبال کنی.</p>
         </article>
         <article class="feature" data-category="words">
-          <div class="tile tile-words">
+          <div class="tile">
             <button type="button" class="tile-ui word-card" aria-expanded="false" aria-controls="word-meaning"><span class="micro-label">فلش‌کارت نمونه</span><strong lang="en" dir="ltr">rhythm</strong><span id="word-meaning" hidden>ریتم، ضرب‌آهنگ</span><span class="word-prompt">نمایش معنی <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#repeat-2"/></svg></span></button>
           </div>
           <div class="feature-label"><span><svg class="icon" aria-hidden="true"><use href="/media/icons.svg#book-open"/></svg> واژه‌ها</span><b>۰۲</b></div>
           <h3>معنی واژه، وسط آهنگ</h3><p>معنی واژه‌ها و عبارت‌های تازه رو همون‌جایی ببین که توی آهنگ به کار رفتن.</p>
         </article>
         <article class="feature" data-category="review">
-          <div class="tile tile-review">
+          <div class="tile">
             <div class="tile-ui quiz"><span class="micro-label">تمرین نمونه</span><strong>معنی <bdi lang="en">sound</bdi> چیه؟</strong><div class="answers"><button type="button" data-answer="true">صدا</button><button type="button" data-answer="false">شب</button></div><span class="feedback" role="status"></span></div>
           </div>
           <div class="feature-label"><span><svg class="icon" aria-hidden="true"><use href="/media/icons.svg#layers"/></svg> تمرین و مرور</span><b>۰۳</b></div>
           <h3>تمرین بعد از شنیدن</h3><p>با سؤال‌های کوتاه ببین معنی کدوم واژه‌ها یادت مونده.</p>
         </article>
         <article class="feature" data-category="bookmark">
-          <div class="tile tile-bookmark" aria-hidden="true">
+          <div class="tile" aria-hidden="true">
             <div class="tile-ui mini-library">
               <div class="mini-heading"><svg class="icon"><use href="/media/icons.svg#bookmark"/></svg> نشان‌شده‌ها</div>
               <div class="mini-entry"><bdi lang="en">rhythm</bdi><span>واژه</span></div>
@@ -103,7 +104,7 @@
           <h3>نشان کن، بعداً بهش برگرد</h3><p>آهنگ‌ها، واژه‌ها و عبارت‌های دلخواهت رو نشان کن تا بعداً توی کتابخانه پیداشون کنی.</p>
         </article>
         <article class="feature" data-category="review">
-          <div class="tile tile-leitner" aria-hidden="true">
+          <div class="tile" aria-hidden="true">
             <div class="tile-ui mini-leitner">
               <div class="mini-heading"><svg class="icon"><use href="/media/icons.svg#layers"/></svg> مرور امروز</div>
               <div class="leitner-word" lang="en" dir="ltr">melody</div>
@@ -114,7 +115,7 @@
           <h3>مرور به‌موقع با لایتنر</h3><p>واژه‌های نشان‌شده رو با فلش‌کارت مرور کن؛ لایتنر زمان مرور بعدی رو بر اساس پاسخ‌هات تنظیم می‌کنه.</p>
         </article>
         <article class="feature" data-category="game">
-          <div class="tile tile-game" aria-hidden="true">
+          <div class="tile" aria-hidden="true">
             <div class="tile-ui mini-game">
               <div class="mini-heading"><svg class="icon"><use href="/media/icons.svg#gamepad"/></svg> واژه‌سازی</div>
               <div class="game-letters" lang="en" dir="ltr"><span>S</span><span>O</span><span>U</span><span>N</span><span>D</span></div>
@@ -176,8 +177,8 @@
         <h2 id="android-title">ری‌دنس برای اندروید</h2>
         <p>برای دریافت ری‌دنس، صفحهٔ برنامه رو در بازار باز کن.</p>
         <div class="android-actions">
-          <a class="button button-white" href="https://cafebazaar.ir/app/com.hydro.reedance">دانلود از بازار <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#arrow-up-left"/></svg></a>
-          <a class="button button-outline" href="https://t.me/reedance"><svg class="icon" aria-hidden="true"><use href="/media/icons.svg#send"/></svg> تلگرام ری‌دنس</a>
+          <a class="button button-primary" href="https://cafebazaar.ir/app/com.hydro.reedance">دانلود از بازار <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#arrow-up-left"/></svg></a>
+          <a class="button button-secondary" href="https://t.me/reedance"><svg class="icon" aria-hidden="true"><use href="/media/icons.svg#send"/></svg> تلگرام ری‌دنس</a>
         </div>
       </div>
     </section>
