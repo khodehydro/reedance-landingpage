@@ -132,8 +132,10 @@ h1,h2,h3,p{margin:0}
 .starter{display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:20px;background:radial-gradient(ellipse at 17% 94%,#c4c8ff,transparent 60%),#eef0ff;border:1px solid #e1e4fa;border-radius:25px;padding:26px clamp(22px,6vw,77px);overflow:hidden}
 .starter p{max-width:none;margin-top:8px}
 .starter-art{justify-self:center;width:220px;height:auto;filter:drop-shadow(0 12px 25px #4445903e)}
-.languages{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:20px 0 0;list-style:none}
+.language-status{margin-top:16px;color:#414557;font-size:13px}
+.languages{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:6px 0 0;list-style:none}
 .languages li{display:flex;align-items:center;gap:7px;padding:6px 8px 6px 12px;border-radius:99px;border:1px solid #dadff6;background:#fff;font-size:13px;font-weight:700}
+.languages-soon li{padding-inline:10px;border-color:#aeb7e2;border-style:dashed;background:#f8f8ff;color:#414557}
 .faq-layout{display:grid;grid-template-columns:1fr 1.6fr;gap:30px}
 .questions{border-top:1px solid var(--line)}
 .questions details{border-bottom:1px solid var(--line)}
