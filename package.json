@@ -1,0 +1,22 @@
+{
+  "name": "reedance-landingpage",
+  "version": "1.0.0",
+  "description": "Persian product landing page for Reedance",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khodehydro/reedance-landingpage.git"
+  },
+  "devDependencies": {
+    "vite": "^8.3.8"
+  },
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  }
+}

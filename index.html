@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f8fc">
+  <meta name="description" content="ری‌دنس؛ تجربهٔ یادگیری زبان با موسیقی، متن همگام، ترجمهٔ تعاملی و مرور واژه‌ها در اندروید.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ری‌دنس — زبان رو با ریتم یاد بگیر">
+  <meta property="og:description" content="از گوش‌دادن تا یادگرفتن؛ یک تجربهٔ موسیقی‌محور برای یادگیری زبان.">
+  <link rel="icon" href="/media/reedance_logo.png" type="image/png">
+  <link rel="preload" href="/fonts/vazirmatn_black.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/src/style.css">
+  <!-- Keep the footer layout with its markup so an older cached stylesheet can't break it. -->
+  <style>
+    .reedance-footer { display: block; margin-top: 36px; border-top: 1px solid var(--line, #e6e6ef); color: var(--muted, #55596c); font-size: 13px; }
+    .reedance-footer .footer-main { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 12px; padding: 18px 0; }
+    .reedance-footer .brand { justify-self: start; font-size: 19px; color: var(--ink, #131421); }
+    .reedance-footer .footer-tagline { margin: 0; text-align: center; }
+    .reedance-footer .footer-top-link { display: inline-flex; align-items: center; justify-self: end; gap: 6px; min-height: 36px; white-space: nowrap; }
+    .reedance-footer .footer-top-link:hover { color: var(--blue, #002afc); }
+    .reedance-footer .footer-credit { margin: 0; padding: 14px 0 19px; border-top: 1px solid var(--line, #e6e6ef); font-size: 12px; text-align: center; }
+    .reedance-footer .footer-credit strong { color: var(--ink, #131421); }
+    .reedance-footer .footer-heart { color: #d42c55; }
+    @media (max-width: 480px) {
+      .reedance-footer { margin-top: 24px; }
+      .reedance-footer .footer-main { grid-template-columns: minmax(0, 1fr) auto; gap: 7px 12px; padding: 13px 0; }
+      .reedance-footer .footer-tagline { grid-column: 1 / -1; grid-row: 2; }
+      .reedance-footer .footer-top-link { grid-column: 2; grid-row: 1; }
+    }
+  </style>
+  <script type="module" src="/src/main.js"></script>
+  <title>ری‌دنس — زبان رو با ریتم یاد بگیر</title>
+</head>
+<body>
+  <a href="#main" class="skip">رفتن به محتوا</a>
+  <header class="site-header wrap" id="top">
+    <a href="#top" class="brand" aria-label="ری‌دنس، ابتدای صفحه"><img src="/media/reedance_logo.png" alt="" width="40" height="40"><span>ری‌دنس</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="باز کردن منو"><svg class="icon" aria-hidden="true"><use href="/media/icons.svg#menu"/></svg></button>
+    <nav id="site-nav" aria-label="ناوبری اصلی">
+      <a href="#experience">تجربهٔ ری‌دنس</a><a href="#languages">زبان‌ها</a><a href="#faq">سوالات متداول</a>
+    </nav>
+    <a class="button button-dark header-cta" href="https://cafebazaar.ir/app/com.hydro.reedance">دانلود از بازار <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#arrow-up-left"/></svg></a>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-intro">
+        <span class="eyebrow"><span class="status-dot"></span> یادگیری زبان، با موسیقی</span>
+        <h1 id="hero-title">زبان رو با <em>ریتم</em> یاد بگیر<span class="period">.</span></h1>
+        <p>با آهنگ پیش برو، معنی هر خط رو کشف کن و واژه‌های تازه رو به خاطر بسپار. <br class="desktop-break">ری‌دنس گوش دادن رو به یاد گرفتن تبدیل می‌کنه.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#experience">کشف امکانات <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#arrow-down"/></svg></a>
+          <a class="button button-light" href="https://cafebazaar.ir/app/com.hydro.reedance">دانلود از بازار <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#arrow-up-left"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading">
+        <div><span class="kicker"><svg class="icon" aria-hidden="true"><use href="/media/icons.svg#sparkles"/></svg> تجربهٔ ری‌دنس</span><h2 id="experience-title">از شنیدن تا یاد گرفتن.</h2></div>
+        <p>چند لحظه با جزئیات ری‌دنس؛ گوش بده، معنی رو پیدا کن و ببین چقدر یادت مونده.</p>
+      </div>
+      <div class="filters" aria-label="فیلتر امکانات">
+        <button type="button" data-filter="all" aria-pressed="true">همه</button><button type="button" data-filter="listen" aria-pressed="false">پخش و متن</button><button type="button" data-filter="words" aria-pressed="false">واژه‌ها</button><button type="button" data-filter="review" aria-pressed="false">تمرین و مرور</button>
+      </div>
+      <div class="feature-grid">
+        <article class="feature" data-category="listen">
+          <div class="tile tile-listen">
+            <div class="tile-ui lyric-sample" dir="ltr" lang="en"><span>Music makes it easier.</span><strong>Sing it one more time.</strong><span>Let the words stay.</span></div>
+          </div>
+          <div class="feature-label"><span><svg class="icon" aria-hidden="true"><use href="/media/icons.svg#audio-lines"/></svg> پخش و متن</span><b>۰۱</b></div>
+          <h3>متن همگام با آهنگ</h3><p>متن و ترجمه با پخش جلو می‌رن تا راحت‌تر هر خط رو دنبال کنی.</p>
+        </article>
+        <article class="feature" data-category="words">
+          <div class="tile tile-words">
+            <button type="button" class="tile-ui word-card" aria-expanded="false" aria-controls="word-meaning"><span class="micro-label">فلش‌کارت نمونه</span><strong lang="en" dir="ltr">rhythm</strong><span id="word-meaning" hidden>ریتم، ضرب‌آهنگ</span><span class="word-prompt">نمایش معنی <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#repeat-2"/></svg></span></button>
+          </div>
+          <div class="feature-label"><span><svg class="icon" aria-hidden="true"><use href="/media/icons.svg#book-open"/></svg> واژه‌ها</span><b>۰۲</b></div>
+          <h3>معنی واژه، وسط آهنگ</h3><p>واژه‌ها رو در متن یاد بگیر و عبارت‌های تازه رو برای بعد نشان کن.</p>
+        </article>
+        <article class="feature" data-category="review">
+          <div class="tile tile-review">
+            <div class="tile-ui quiz"><span class="micro-label">تمرین نمونه</span><strong>معنی <bdi lang="en">sound</bdi> چیه؟</strong><div class="answers"><button type="button" data-answer="true">صدا</button><button type="button" data-answer="false">شب</button></div><span class="feedback" role="status"></span></div>
+          </div>
+          <div class="feature-label"><span><svg class="icon" aria-hidden="true"><use href="/media/icons.svg#layers"/></svg> تمرین و مرور</span><b>۰۳</b></div>
+          <h3>مرور به‌موقع با لایتنر</h3><p>سؤال جواب بده و واژه‌هایی رو که هنوز جا نیفتادن دوباره مرور کن.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="languages" aria-labelledby="languages-title">
+      <div class="starter">
+        <div>
+          <span class="kicker"><svg class="icon" aria-hidden="true"><use href="/media/icons.svg#sparkles"/></svg> زبان‌های ری‌دنس</span>
+          <h2 id="languages-title">از اولین نت شروع کن.</h2>
+          <p>زبان مورد علاقه‌ات رو انتخاب کن و با ریتم خودت یاد بگیر.</p>
+          <ul class="languages" aria-label="زبان‌های ری‌دنس">
+            <li><img src="/media/flag_gb_circle.png" alt="" width="24" height="24"><span>انگلیسی</span></li>
+            <li><img src="/media/flag_es_circle.png" alt="" width="24" height="24"><span>اسپانیایی</span></li>
+            <li><img src="/media/flag_tr_circle.png" alt="" width="24" height="24"><span>ترکی</span></li>
+            <li><img src="/media/flag_kr_circle.png" alt="" width="24" height="24"><span>کره‌ای <small class="language-badge">به‌زودی</small></span></li>
+            <li><img src="/media/flag_ru_circle.png" alt="" width="24" height="24"><span>روسی <small class="language-badge">به‌زودی</small></span></li>
+            <li><img src="/media/flag_de_circle.png" alt="" width="24" height="24"><span>آلمانی <small class="language-badge">به‌زودی</small></span></li>
+          </ul>
+        </div>
+        <img class="starter-art" src="/media/reedance_starter.png" loading="lazy" width="384" height="384" alt="">
+      </div>
+    </section>
+
+    <section class="section wrap" id="faq" aria-labelledby="faq-title">
+      <div class="faq-layout">
+        <div><span class="kicker"><svg class="icon" aria-hidden="true"><use href="/media/icons.svg#circle-help"/></svg> راهنما</span><h2 id="faq-title">سوالات متداول</h2></div>
+        <div class="questions">
+          <details><summary>الان می‌تونم اپ رو دانلود کنم؟ <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#chevron-down"/></svg></summary><p>برای دانلود و نصب نسخهٔ اندروید، به <a href="https://cafebazaar.ir/app/com.hydro.reedance">صفحهٔ ری‌دنس در بازار</a> برو.</p></details>
+          <details><summary>برای کار با اپ حساب لازم دارم؟ <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#chevron-down"/></svg></summary><p>نسخهٔ فعلی اندروید حساب کاربری یا همگام‌سازی ابری نداره. پیشرفت تمرین‌ها و نشان‌ها روی دستگاه ذخیره می‌شن.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="android" aria-labelledby="android-title">
+      <div class="android-panel">
+        <img src="/media/reedance_logo.png" width="58" height="58" alt="" loading="lazy">
+        <span class="android-label"><span class="status-dot"></span> دانلود نسخهٔ اندروید</span>
+        <h2 id="android-title">ری‌دنس برای اندروید</h2>
+        <p>برای دریافت ری‌دنس، صفحهٔ برنامه رو در بازار باز کن.</p>
+        <div class="android-actions">
+          <a class="button button-white" href="https://cafebazaar.ir/app/com.hydro.reedance">دانلود از بازار <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#arrow-up-left"/></svg></a>
+          <a class="button button-outline" href="https://t.me/reedance"><svg class="icon" aria-hidden="true"><use href="/media/icons.svg#send"/></svg> تلگرام ری‌دنس</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="reedance-footer wrap">
+    <div class="footer-main">
+      <a href="#top" class="brand" aria-label="ری‌دنس، ابتدای صفحه"><img src="/media/reedance_logo.png" alt="" width="34" height="34"><span>ری‌دنس</span></a>
+      <p class="footer-tagline">یادگیری زبان، به ریتم خودت.</p>
+      <a href="#top" class="footer-top-link">بازگشت به بالا <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5m-7 7 7-7 7 7"/></svg></a>
+    </div>
+    <p class="footer-credit" lang="en" dir="ltr">developed with <span class="footer-heart">❤️</span> by <strong>HYDRO team</strong></p>
+  </footer>
+</body>
+</html>
