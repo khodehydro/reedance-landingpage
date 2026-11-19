@@ -11,6 +11,24 @@
   <link rel="icon" href="/media/reedance_logo.png" type="image/png">
   <link rel="preload" href="/fonts/vazirmatn_black.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/src/style.css">
+  <!-- Keep the footer layout with its markup so an older cached stylesheet can't break it. -->
+  <style>
+    .reedance-footer { display: block; margin-top: 36px; border-top: 1px solid var(--line, #e6e6ef); color: var(--muted, #55596c); font-size: 13px; }
+    .reedance-footer .footer-main { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 12px; padding: 18px 0; }
+    .reedance-footer .brand { justify-self: start; font-size: 19px; color: var(--ink, #131421); }
+    .reedance-footer .footer-tagline { margin: 0; text-align: center; }
+    .reedance-footer .footer-top-link { display: inline-flex; align-items: center; justify-self: end; gap: 6px; min-height: 36px; white-space: nowrap; }
+    .reedance-footer .footer-top-link:hover { color: var(--blue, #002afc); }
+    .reedance-footer .footer-credit { margin: 0; padding: 14px 0 19px; border-top: 1px solid var(--line, #e6e6ef); font-size: 12px; text-align: center; }
+    .reedance-footer .footer-credit strong { color: var(--ink, #131421); }
+    .reedance-footer .footer-heart { color: #d42c55; }
+    @media (max-width: 480px) {
+      .reedance-footer { margin-top: 24px; }
+      .reedance-footer .footer-main { grid-template-columns: minmax(0, 1fr) auto; gap: 7px 12px; padding: 13px 0; }
+      .reedance-footer .footer-tagline { grid-column: 1 / -1; grid-row: 2; }
+      .reedance-footer .footer-top-link { grid-column: 2; grid-row: 1; }
+    }
+  </style>
   <script type="module" src="/src/main.js"></script>
   <title>ری‌دنس — زبان رو با ریتم یاد بگیر</title>
 </head>
@@ -114,11 +132,11 @@
     </section>
   </main>
 
-  <footer class="site-footer wrap">
+  <footer class="reedance-footer wrap">
     <div class="footer-main">
       <a href="#top" class="brand" aria-label="ری‌دنس، ابتدای صفحه"><img src="/media/reedance_logo.png" alt="" width="34" height="34"><span>ری‌دنس</span></a>
       <p class="footer-tagline">یادگیری زبان، به ریتم خودت.</p>
-      <a href="#top" class="back-top">بازگشت به بالا <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#arrow-down"/></svg></a>
+      <a href="#top" class="footer-top-link">بازگشت به بالا <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5m-7 7 7-7 7 7"/></svg></a>
     </div>
     <p class="footer-credit" lang="en" dir="ltr">developed with <span class="footer-heart">❤️</span> by <strong>HYDRO team</strong></p>
   </footer>
