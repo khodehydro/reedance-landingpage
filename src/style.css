@@ -66,6 +66,7 @@ h1,h2,h3,p{margin:0}
 .section h2{font-size:clamp(31px,4.3vw,56px);line-height:1.25;font-weight:900;letter-spacing:-.04em;margin-top:5px}
 .section-heading p,.starter p,.android-panel p{line-height:1.85;color:var(--muted);max-width:34ch}
 /* Staggered, point-up hexagons: each tile is the feature card, not a tab. */
+.feature-defs{position:absolute;width:0;height:0;overflow:hidden}
 .feature-board{
   display:grid;width:min(100%,810px);margin-inline:auto;aspect-ratio:15/14;
   grid-template-columns:repeat(6,minmax(0,1fr));grid-template-rows:30% 30% 40%;align-items:start;
@@ -82,7 +83,7 @@ h1,h2,h3,p{margin:0}
 .feature-cell:nth-child(5){grid-area:2/5/auto/span 2}
 .feature-cell:nth-child(6){grid-area:3/2/auto/span 2;--cell-fill:#315987}
 .feature-cell:nth-child(7){grid-area:3/4/auto/span 2;--cell-fill:#3b6794}
-.cell-shape{position:absolute;inset:0;width:100%;height:100%;z-index:-1;fill:var(--cell-fill);stroke:#ffffffc7;stroke-width:1.5}
+.cell-shape{position:absolute;inset:0;width:100%;height:100%;z-index:-1;fill:var(--cell-fill);stroke:#d2e3f8;stroke-width:2}
 .cell-content{display:grid;justify-items:center;gap:5px;width:80%;max-width:196px}
 .cell-icon{width:clamp(21px,3vw,34px);height:clamp(21px,3vw,34px);margin-bottom:3px}
 .cell-content h3{font-size:clamp(14px,2.6vw,22px);font-weight:900;line-height:1.35;text-wrap:balance}
