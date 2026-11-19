@@ -136,7 +136,7 @@ h1,h2,h3,p{margin:0}
 .languages li{display:inline-flex;align-items:center;gap:7px;padding:6px 8px 6px 12px;border-radius:999px;border:1px solid #dadff6;background:#fff;font-size:13px;font-weight:700;line-height:1.35;white-space:nowrap}
 .languages img{flex:none}
 .languages li:has(.language-badge){background:#f5f6fd;border-color:#dce0f1;color:#555b74}
-.languages li:has(.language-badge) img{opacity:.72;filter:saturate(.7)}
+.languages li:has(.language-badge) img{opacity:.82;filter:saturate(.88)}
 .language-badge{display:inline-block;margin-inline-start:4px;padding:2px 6px;border-radius:999px;background:#e9ecfa;color:#495586;font-size:10px}
 .faq-layout{display:grid;grid-template-columns:1fr 1.6fr;gap:30px}
 .questions{border-top:1px solid var(--line)}
