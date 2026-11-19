@@ -93,6 +93,7 @@ h1,h2,h3,p{margin:0}
 .questions summary svg{transition:transform .2s ease}
 .questions details[open] summary svg{transform:rotate(180deg)}
 .questions p{color:var(--muted);font-size:15px;line-height:1.8;padding-bottom:15px}
+.questions p a{color:#233cca;text-decoration:underline;text-underline-offset:3px}
 .android-panel{background:radial-gradient(ellipse at 18% 115%,#6256f0,transparent 62%),radial-gradient(ellipse at 95% 29%,#203fef,transparent 66%),#1a1c6c;text-align:center;color:white;border-radius:25px;padding:37px 16px 41px;display:grid;justify-items:center}
 .android-panel img{border-radius:16px;margin-bottom:12px}
 .android-label{display:inline-flex;gap:8px;align-items:center;font-size:12px;background:#17194f7d;border:1px solid #ffffff45;border-radius:99px;padding:4px 9px}
