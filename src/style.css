@@ -148,7 +148,10 @@ h1,h2,h3,p{margin:0}
 .android-label .status-dot{background:#c1caff;box-shadow:none}
 .android-panel p{max-width:none;color:#e8e9ff;margin-top:7px}
 .button-white{background:#fff;color:#25265d}.button-outline{color:#fff;border-color:#ffffff72}.button-outline:hover{background:#ffffff20}
-.site-footer{margin-top:36px;border-top:1px solid var(--line);min-height:75px;display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--muted);font-size:13px}
+.site-footer{margin-top:36px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+.footer-main{min-height:75px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.footer-credit{text-align:center;border-top:1px solid var(--line);padding:12px 0 17px;font-size:12px}
+.footer-credit strong{color:var(--ink)}
 .site-footer .brand{font-size:19px;color:var(--ink)}
 .back-top{white-space:nowrap}
 @media(max-width:950px){.float-lyric{left:5%;width:166px}.float-en{font-size:12px}.float-fa{font-size:10px}.stage-copy{inset-inline-start:4%}.section{margin-top:70px}}
@@ -178,6 +181,6 @@ h1,h2,h3,p{margin:0}
   .phone{width:min(290px,calc(100% - 24px))}
   .feature-grid{grid-template-columns:1fr}
   .starter{grid-template-columns:1fr;gap:8px}.starter-art{width:130px;grid-row:1;justify-self:start}
-  .site-footer p{display:none}
+  .footer-tagline{display:none}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
