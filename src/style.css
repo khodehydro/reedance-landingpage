@@ -57,6 +57,9 @@ h1,h2,h3,p{margin:0}
 .tile-listen{background:radial-gradient(ellipse at 65% 15%,#b4adff,transparent 64%),linear-gradient(135deg,#5c53f6,#232184)}
 .tile-words{background:radial-gradient(ellipse at 67% 22%,#fff2e4,transparent 60%),linear-gradient(145deg,#ffc7ae,#efaaa6)}
 .tile-review{background:radial-gradient(ellipse at 72% 19%,#d9fffe,transparent 65%),linear-gradient(145deg,#8cddd9,#84b0ec)}
+.tile-bookmark{background:radial-gradient(ellipse at 70% 12%,#fff5ff,transparent 65%),linear-gradient(145deg,#e9b8ff,#c3aafa)}
+.tile-leitner{background:radial-gradient(ellipse at 75% 10%,#fbffd9,transparent 67%),linear-gradient(145deg,#e6ee9d,#9fd39e)}
+.tile-game{background:radial-gradient(ellipse at 65% 16%,#8fb7ff,transparent 66%),linear-gradient(145deg,#5485f3,#272aa1)}
 .tile-ui{width:min(100%,198px);min-height:121px;border-radius:13px;padding:12px;background:#fcfcff;box-shadow:0 11px 25px #16163122}
 .lyric-sample{background:#201b54e8;color:#cbc8f4;display:grid;align-content:center;gap:6px;font:700 10px Manrope,sans-serif;transform:rotate(-7deg)}
 .lyric-sample strong{background:#6e60e9;padding:7px;border-radius:6px;color:#fff}
@@ -71,6 +74,18 @@ h1,h2,h3,p{margin:0}
 .answers button{flex:1;font-size:12px;border:1px solid #cbdada;background:#f0fbfa;border-radius:6px;padding:4px;color:#193e3d}
 .answers button.correct{background:#baefde}.answers button.incorrect{background:#ffd9dd;color:#772639}
 .feedback{min-height:1.4em}
+.mini-library,.mini-leitner,.mini-game{display:grid;align-content:center;gap:7px;font-size:11px}
+.mini-heading{display:flex;align-items:center;gap:5px;font-weight:700}
+.mini-library{color:#573079;transform:rotate(4deg)}
+.mini-entry{display:flex;align-items:center;justify-content:space-between;gap:5px;border-radius:6px;background:#f5edff;padding:5px 7px}
+.mini-entry bdi{font:700 10px Manrope,sans-serif}
+.mini-leitner{color:#244d36;text-align:center;box-shadow:4px 6px #f0f8d8,8px 12px #d5eac0,0 14px 27px #263d2c35;transform:rotate(-5deg)}
+.leitner-word{font:800 22px Manrope,sans-serif}
+.mini-translation{color:#385244}
+.mini-game{background:#181c52;color:#fff;transform:rotate(4deg)}
+.game-letters{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:3px;margin-top:4px;font:800 12px Manrope,sans-serif}
+.game-letters span{display:grid;place-items:center;aspect-ratio:1;background:#dbe9ff;color:#27348c;clip-path:polygon(50% 0,94% 25%,94% 75%,50% 100%,6% 75%,6% 25%)}
+.game-letters span:nth-child(even){margin-top:6px;background:#a6dfff}
 .feature-label{display:flex;align-items:center;justify-content:space-between;margin:13px 6px 4px;font-size:12px;color:#3d4dc1}
 .feature-label span{display:flex;align-items:center;gap:6px}
 .feature-label b{color:#656a7f}
@@ -93,7 +108,6 @@ h1,h2,h3,p{margin:0}
 .questions summary svg{transition:transform .2s ease}
 .questions details[open] summary svg{transform:rotate(180deg)}
 .questions p{color:var(--muted);font-size:15px;line-height:1.8;padding-bottom:15px}
-.questions p a{color:#233cca;text-decoration:underline;text-underline-offset:3px}
 .android-panel{background:var(--blue);text-align:center;color:white;border-radius:25px;padding:37px 16px 41px;display:grid;justify-items:center}
 .android-panel img{border-radius:16px;margin-bottom:12px}
 .android-label{display:inline-flex;gap:8px;align-items:center;font-size:12px;background:#17194f7d;border:1px solid #ffffff45;border-radius:99px;padding:4px 9px}

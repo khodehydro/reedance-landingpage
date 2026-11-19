@@ -61,8 +61,13 @@
         <div><span class="kicker"><svg class="icon" aria-hidden="true"><use href="/media/icons.svg#sparkles"/></svg> تجربهٔ ری‌دنس</span><h2 id="experience-title">از شنیدن تا یاد گرفتن.</h2></div>
         <p>چند لحظه با جزئیات ری‌دنس؛ گوش بده، معنی رو پیدا کن و ببین چقدر یادت مونده.</p>
       </div>
-      <div class="filters" aria-label="فیلتر امکانات">
-        <button type="button" data-filter="all" aria-pressed="true">همه</button><button type="button" data-filter="listen" aria-pressed="false">پخش و متن</button><button type="button" data-filter="words" aria-pressed="false">واژه‌ها</button><button type="button" data-filter="review" aria-pressed="false">تمرین و مرور</button>
+      <div class="filters" role="group" aria-label="فیلتر امکانات">
+        <button type="button" data-filter="all" aria-pressed="true">همه</button>
+        <button type="button" data-filter="listen" aria-pressed="false">پخش و متن</button>
+        <button type="button" data-filter="words" aria-pressed="false">واژه‌ها</button>
+        <button type="button" data-filter="bookmark" aria-pressed="false">نشان‌گذاری</button>
+        <button type="button" data-filter="review" aria-pressed="false">تمرین و مرور</button>
+        <button type="button" data-filter="game" aria-pressed="false">بازی</button>
       </div>
       <div class="feature-grid">
         <article class="feature" data-category="listen">
@@ -77,14 +82,46 @@
             <button type="button" class="tile-ui word-card" aria-expanded="false" aria-controls="word-meaning"><span class="micro-label">فلش‌کارت نمونه</span><strong lang="en" dir="ltr">rhythm</strong><span id="word-meaning" hidden>ریتم، ضرب‌آهنگ</span><span class="word-prompt">نمایش معنی <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#repeat-2"/></svg></span></button>
           </div>
           <div class="feature-label"><span><svg class="icon" aria-hidden="true"><use href="/media/icons.svg#book-open"/></svg> واژه‌ها</span><b>۰۲</b></div>
-          <h3>معنی واژه، وسط آهنگ</h3><p>واژه‌ها رو در متن یاد بگیر و عبارت‌های تازه رو برای بعد نشان کن.</p>
+          <h3>معنی واژه، وسط آهنگ</h3><p>معنی واژه‌ها و عبارت‌های تازه رو همون‌جایی ببین که توی آهنگ به کار رفتن.</p>
         </article>
         <article class="feature" data-category="review">
           <div class="tile tile-review">
             <div class="tile-ui quiz"><span class="micro-label">تمرین نمونه</span><strong>معنی <bdi lang="en">sound</bdi> چیه؟</strong><div class="answers"><button type="button" data-answer="true">صدا</button><button type="button" data-answer="false">شب</button></div><span class="feedback" role="status"></span></div>
           </div>
           <div class="feature-label"><span><svg class="icon" aria-hidden="true"><use href="/media/icons.svg#layers"/></svg> تمرین و مرور</span><b>۰۳</b></div>
-          <h3>مرور به‌موقع با لایتنر</h3><p>سؤال جواب بده و واژه‌هایی رو که هنوز جا نیفتادن دوباره مرور کن.</p>
+          <h3>تمرین بعد از شنیدن</h3><p>با سؤال‌های کوتاه ببین معنی کدوم واژه‌ها یادت مونده.</p>
+        </article>
+        <article class="feature" data-category="bookmark">
+          <div class="tile tile-bookmark" aria-hidden="true">
+            <div class="tile-ui mini-library">
+              <div class="mini-heading"><svg class="icon"><use href="/media/icons.svg#bookmark"/></svg> نشان‌شده‌ها</div>
+              <div class="mini-entry"><bdi lang="en">rhythm</bdi><span>واژه</span></div>
+              <div class="mini-entry"><bdi lang="en">one more time</bdi><span>عبارت</span></div>
+            </div>
+          </div>
+          <div class="feature-label"><span><svg class="icon" aria-hidden="true"><use href="/media/icons.svg#bookmark"/></svg> نشان‌گذاری</span><b>۰۴</b></div>
+          <h3>نشان کن، بعداً بهش برگرد</h3><p>آهنگ‌ها، واژه‌ها و عبارت‌های دلخواهت رو نشان کن تا بعداً توی کتابخانه پیداشون کنی.</p>
+        </article>
+        <article class="feature" data-category="review">
+          <div class="tile tile-leitner" aria-hidden="true">
+            <div class="tile-ui mini-leitner">
+              <div class="mini-heading"><svg class="icon"><use href="/media/icons.svg#layers"/></svg> مرور امروز</div>
+              <div class="leitner-word" lang="en" dir="ltr">melody</div>
+              <span class="mini-translation">ملودی، آهنگ</span>
+            </div>
+          </div>
+          <div class="feature-label"><span><svg class="icon" aria-hidden="true"><use href="/media/icons.svg#layers"/></svg> تمرین و مرور</span><b>۰۵</b></div>
+          <h3>مرور به‌موقع با لایتنر</h3><p>واژه‌های نشان‌شده رو با فلش‌کارت مرور کن؛ لایتنر زمان مرور بعدی رو بر اساس پاسخ‌هات تنظیم می‌کنه.</p>
+        </article>
+        <article class="feature" data-category="game">
+          <div class="tile tile-game" aria-hidden="true">
+            <div class="tile-ui mini-game">
+              <div class="mini-heading"><svg class="icon"><use href="/media/icons.svg#gamepad"/></svg> واژه‌سازی</div>
+              <div class="game-letters" lang="en" dir="ltr"><span>S</span><span>O</span><span>U</span><span>N</span><span>D</span></div>
+            </div>
+          </div>
+          <div class="feature-label"><span><svg class="icon" aria-hidden="true"><use href="/media/icons.svg#gamepad"/></svg> بازی</span><b>۰۶</b></div>
+          <h3>بازی واژه‌سازی</h3><p>حروف رو به هم وصل کن و واژه‌های آهنگ‌هایی رو که دانلود کردی، توی مرحله‌های بازی بساز.</p>
         </article>
       </div>
     </section>
@@ -112,8 +149,22 @@
       <div class="faq-layout">
         <div><span class="kicker"><svg class="icon" aria-hidden="true"><use href="/media/icons.svg#circle-help"/></svg> راهنما</span><h2 id="faq-title">سوالات متداول</h2></div>
         <div class="questions">
-          <details><summary>الان می‌تونم اپ رو دانلود کنم؟ <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#chevron-down"/></svg></summary><p>برای دانلود و نصب نسخهٔ اندروید، به <a href="https://cafebazaar.ir/app/com.hydro.reedance">صفحهٔ ری‌دنس در بازار</a> برو.</p></details>
-          <details><summary>برای کار با اپ حساب لازم دارم؟ <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#chevron-down"/></svg></summary><p>نسخهٔ فعلی اندروید حساب کاربری یا همگام‌سازی ابری نداره. پیشرفت تمرین‌ها و نشان‌ها روی دستگاه ذخیره می‌شن.</p></details>
+          <details>
+            <summary>آیا همهٔ آهنگ‌ها پریمیوم هستن؟ <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#chevron-down"/></svg></summary>
+            <p>نه، آهنگ‌های رایگان هم وجود دارن.</p>
+          </details>
+          <details>
+            <summary>برای کار با اپ حساب لازم دارم؟ <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#chevron-down"/></svg></summary>
+            <p>نسخهٔ فعلی اندروید حساب کاربری یا همگام‌سازی ابری نداره. پیشرفت تمرین‌ها و نشان‌ها روی دستگاه ذخیره می‌شن.</p>
+          </details>
+          <details>
+            <summary>هزینهٔ اشتراک چقدره؟ <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#chevron-down"/></svg></summary>
+            <p>قیمت به‌روز اشتراک رو در بخش اشتراکِ اپ ببین.</p>
+          </details>
+          <details>
+            <summary>خرید اقساطی ممکنه؟ <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#chevron-down"/></svg></summary>
+            <p>اگر گزینهٔ اسنپ‌پی در بخش اشتراک برات فعال باشه، می‌تونی هزینه رو قسطی پرداخت کنی.</p>
+          </details>
         </div>
       </div>
     </section>
