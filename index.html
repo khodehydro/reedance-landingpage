@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#121212">
   <meta name="color-scheme" content="dark">
-  <meta name="description" content="ری‌دنس؛ تجربهٔ یادگیری زبان با موسیقی، متن همگام، ترجمهٔ تعاملی و مرور واژه‌ها در اندروید.">
+  <meta name="description" content="ری‌دنس؛ تجربهٔ یادگیری زبان با موسیقی، متن همگام، ترجمهٔ تعاملی، تمرین مکالمه با ری‌تاک و مرور واژه‌ها در اندروید.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="ری‌دنس — زبان رو با ریتم یاد بگیر">
-  <meta property="og:description" content="از گوش‌دادن تا یادگرفتن؛ یک تجربهٔ موسیقی‌محور برای یادگیری زبان.">
+  <meta property="og:description" content="از گوش‌دادن و متن همگام تا تمرین مکالمه با ری‌تاک؛ یک تجربهٔ موسیقی‌محور برای یادگیری زبان.">
   <link rel="icon" href="/media/reedance_logo.png" type="image/png">
   <link rel="preload" href="/fonts/vazirmatn_black.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/src/style.css">
@@ -38,8 +38,8 @@
   <header class="site-header wrap" id="top">
     <a href="#top" class="brand" aria-label="ری‌دنس، ابتدای صفحه"><img src="/media/reedance_logo.png" alt="" width="40" height="40"><span>ری‌دنس</span></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="باز کردن منو"><svg class="icon" aria-hidden="true"><use href="/media/icons.svg#menu"/></svg></button>
-    <nav id="site-nav" aria-label="ناوبری اصلی">
-      <a href="#experience">تجربهٔ ری‌دنس</a><a href="#languages">زبان‌ها</a><a href="#faq">سوالات متداول</a>
+      <nav id="site-nav" aria-label="ناوبری اصلی">
+      <a href="#experience">تجربهٔ ری‌دنس</a><a href="#reetalk">ری‌تاک</a><a href="#languages">زبان‌ها</a><a href="#faq">سوالات متداول</a>
     </nav>
     <a class="button button-secondary header-cta" href="https://cafebazaar.ir/app/com.hydro.reedance">دانلود از بازار <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#arrow-up-left"/></svg></a>
   </header>
@@ -49,7 +49,7 @@
       <div class="hero-intro">
         <span class="eyebrow"><span class="status-dot"></span> یادگیری زبان، با موسیقی</span>
         <h1 id="hero-title">زبان رو با <em>ریتم</em> یاد بگیر<span class="period">.</span></h1>
-        <p>با آهنگ پیش برو، معنی هر خط رو کشف کن و واژه‌های تازه رو به خاطر بسپار. <br class="desktop-break">ری‌دنس گوش دادن رو به یاد گرفتن تبدیل می‌کنه.</p>
+        <p>با آهنگ پیش برو، معنی هر خط رو کشف کن، واژه‌های تازه رو به خاطر بسپار و مکالمه رو با ری‌تاک تمرین کن. <br class="desktop-break">ری‌دنس گوش دادن رو به یاد گرفتن تبدیل می‌کنه.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#experience">کشف امکانات <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#arrow-down"/></svg></a>
           <a class="button button-secondary" href="https://cafebazaar.ir/app/com.hydro.reedance">دانلود از بازار <svg class="icon" aria-hidden="true"><use href="/media/icons.svg#arrow-up-left"/></svg></a>
@@ -152,6 +152,35 @@
             <p>واژه‌ها و فعل‌های آهنگ رو در داستانی تازه بخون و بشنو.</p>
           </div>
         </article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="reetalk" aria-labelledby="reetalk-title">
+      <div class="reetalk-panel">
+        <div class="reetalk-art" aria-hidden="true">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+          </svg>
+        </div>
+        <div class="reetalk-body">
+          <span class="kicker">تمرین مکالمه</span>
+          <h2 id="reetalk-title">مکالمه رو با ری‌تاک تمرین کن<span class="period">.</span></h2>
+          <p>گفت‌وگوهای دسته‌بندی‌شده رو بخوان، بشنو و با نقش‌آفرینی مکالمه رو تمرین کن؛ یک بخش مستقل از موسیقی برای تمرین گفت‌وگو.</p>
+          <ul class="reetalk-points" aria-label="امکانات ری‌تاک">
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              <div><strong>گفت‌وگوهای دسته‌بندی‌شده</strong><span>تمرین مکالمه در دسته‌های زندگی روزمره، سفر و دیگر موضوعات.</span></div>
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              <div><strong>متن، ترجمه و واژه‌ها</strong><span>متن و ترجمهٔ هر گفت‌وگو، همراه با واژه‌های آن.</span></div>
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              <div><strong>تمرین با نقش‌آفرینی</strong><span>با حالت‌های صدا و نقش‌آفرینی، مکالمه رو خودت تمرین کن.</span></div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
